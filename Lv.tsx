@@ -10,7 +10,6 @@ export const Lv = React.forwardRef((props: LvProps, ref: React.Ref<HTMLDivElemen
   // [変数, 変数に値をセットする関数]
   const [text, setText] = useState('');
 
-//  const r = useRef(null);
   useEffect(() => {
     ref.current.addEventListener('An item arrives', (e) => {
       console.log(e);

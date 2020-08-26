@@ -16,7 +16,7 @@ const App = () => {
   const lv = useRef<HTMLDivElement>(null);
   const [text, setText] = useState('');
   const appendChild = (e) => {
-    setText(text + 'a');
+    lv.current.dispatchEvent(new CustomEvent('An item arrives', {detail: {}}));
   };
 
   return (

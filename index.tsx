@@ -13,8 +13,9 @@ interface AppState {
 const App = () => {
 //const App<AppProps, AppState> = () => {
 
-  const lv = useRef<HTMLDivElement>(null);
+  const lv = useRef(null);
   const [text, setText] = useState('');
+  
   const appendChild = (e) => {
     lv.current.dispatchEvent(new CustomEvent('An item arrives', {detail: {}}));
   };
